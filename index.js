@@ -5,6 +5,10 @@ const slideIn = [
     { transform: "translateX(15rem)" },
     { transform: "translateX(0)" },
   ];
+  const slideOut = [
+    { transform: "translateX(0)" },
+    { transform: "translateX(15)" },
+  ];
   
 const timeSlide = {
     duration: 400,
@@ -18,7 +22,9 @@ menu.addEventListener('click', function() {
 });
 
 menuCloser.addEventListener('click', function() {
-  openMenu.style.display = 'none';
-
+  openMenu.animate(slideOut, timeSlide)
+  setTimeout(() => {
+    openMenu.style.display = 'none';
+  }, 600);
 });
 
