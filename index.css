@@ -60,6 +60,7 @@ nav{
     font-size: 0.8rem;
     line-height: 1.5rem;
     margin-top: 1rem;
+    transition: all 500ms ease-in-out;
 }
 /* main section */
 
@@ -182,6 +183,10 @@ footer{
 .menu-list:hover{
     transform: translateY(-0.2rem);
 }
+#header-btn:hover{
+    background-color: black;
+    cursor: pointer;
+}
 #desktop-ul{
     display: none;
 }
@@ -208,6 +213,8 @@ footer{
         justify-items: center;
         width: 90%;
         margin: auto;
+        z-index: 1;
+        position: relative;    
     }
     #header-container {
         width: 100%;
