@@ -1,297 +1,67 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
-body {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
+body{
+    background-color: #1f2631;
+    font-family: 'Manrope', sans-serif;
 }
-header{
-    width: 90%;
-    margin: auto;
-}
-nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.5rem;
-    align-items: center;
-}
-#logo{
-    width: 2.82rem;
-    height: 1.75rem;
-}
-#menu {
-    width: 2.5rem;
-    height: 1.1rem;
-    cursor: pointer;
-}
-#header-container{
-    width: 90%;
-    margin: auto;
-    margin-top: 2.5rem;
-}
-#header-img{
-    width: 100%;
-}
-#header-h1{
-    color: #00001A;
-    font-weight: 800;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    margin-top: 1rem;
-    width: 80%;
-}
-#header-caption{
-    color: #5E607A;
-    font-weight: 400;
-    font-size: 0.94rem;
-    line-height: 1.6rem;
-    margin-top: 1rem;
-}
-#header-btn{
-    background-color: #F15D51;
-    width: 11.6rem;
-    height: 3rem;
-    border: none;
-    color: #FFFDFA;
-    letter-spacing: 0.3rem;
-    font-weight: 700;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-    margin-top: 1rem;
-    transition: all 500ms ease-in-out;
-}
-/* main section */
-
-main{
-    width: 90%;
-    margin: auto;
-    background-color: #00001A;
-    height: fit-content;
-    margin-top: 5rem;
-}
-#new-container{
-    padding: 1.5rem;
-}
-#new-h2{
-    color: #E9AA52;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2rem;
-}
-.new-divs{
-    margin-top: 1.5rem;
-}
-.new-h3{
-    color: #FFFDFA;
-    font-weight: 800;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-}
-.new-p{
-    color: #C5C6CE;
-    font-weight: 400;
-    font-size: 0.94rem;
-    line-height: 1.62rem;
-}
-.new-hr{
-   border: solid 1px #5E607A;
-   margin-top: 1.5rem;
-}
-/* footer section */ 
-footer{
-    width: 90%;
-    margin: auto;
-    height: 28rem;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-}
-.picks-containers{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
-}
-.picks-containers > div {
-    width: fit-content;
-    max-width: 14rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-.pick-img{
-    width: 100px;
-    height: auto;
-}
-.pick-num {
-    color: #C5C6CE;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2rem;
-}
-.pick-caption{
-    color: #5E607A;
-    font-weight: 400;
-    font-size: 0.95rem;
-    line-height: 1.62rem;
-}
-.pick-h3{
-    color: #00001A;
-}
-
-#open-menu{
-    height: 100vh;
-    width: 65%;
+#qoute-container{
+    width: 33rem;
+    height: 18rem;
+    background-color: #313a49;
     position: fixed;
-    z-index: 2;
-    right: 0;
     top: 0;
-    background-color: white;
-    display: none;
-}
-#menu-closer{
-    margin-top: 1.5rem;
-    position: absolute;
-    right: 1.5rem;
-}
-#mobile-list{
+    right: 0;
+    bottom: 0;
+    left: 0;
     margin: auto;
+    border-radius: 1rem;
+    min-height: fit-content;
+}
+#qoute-container > div > h2 {
+    color:hsl(150, 100%, 66%);
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+#qoute-container > div > p{
+    text-align: center;
+    font-size: 1.6rem;
+    color: hsl(193, 38%, 86%);
+    font-weight: 800;
+    height: 5rem;
+}
+#flex-container-qoute{
     display: flex;
     flex-direction: column;
-    height: 70%;
-    width: 100%;
-    gap: 1.5rem;
-    justify-content: center;
-    list-style-type: none;
-    align-items: flex-start;
-
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
 }
-.menu-list{
-    text-decoration: none;
-    color: #00001A;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    cursor: pointer;
-    width: 100%;
-    transition: all ease-in-out 350ms;
+#qoute-container > div > img {
+    position: relative;
+    top: 3.5rem;
+    display: block;
 }
-.menu-list:hover{
-    transform: translateY(-0.2rem);
-}
-#header-btn:hover{
-    background-color: black;
+#qoute-container > div > button {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    position: absolute;
+    bottom: -2rem;
     cursor: pointer;
 }
-#desktop-ul{
-    display: none;
-}
-@media screen and (min-width: 768px) {
-    #open-menu{
-        width: 20rem;
+@media  screen and (max-width: 480px) {
+    #qoute-container{
+        width: 95%;
     }
-}
-@media screen and (min-width: 868px) {
-    body{
-        width: 80%;
-        margin: auto;
-    }
-}
-
-@media screen and (min-width: 1150px) {
-    #section-desktop {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 528px;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        justify-items: center;
-        width: 90%;
-        margin: auto;
-        z-index: 1;
-        position: relative;    
-    }
-    #header-container {
-        width: 100%;
-        margin: auto;
-        grid-column: 1 /5;
-        height: 100%;
-        position: relative;
-    }
-    header {
-        width: 90%;
-        margin: auto;
-        margin-bottom: 3rem;
-    }
-    main {
-        width: 90%;
-        margin: auto;
-        background-color: #00001A;
-        height: fit-content;
-        height: 100%;
-        grid-column: 5 / 7;
-        min-height: 33rem;
-        max-width: 22rem;
-    }
-    #header-img {
-        width: 100%;
-        height: 20rem;
-        margin: auto;
-        object-fit: none;
-    }
-    #header-h1 {
-
-        font-style: normal;
-        font-weight: 800;
-        font-size: 56px;
-        line-height: 56px;
-    }
-    #hedaer-text-div{
-        display: flex;
-        gap: 1rem;
-        justify-content: space-between;
-        position: absolute;
-        bottom: 0;
-    }
-    #caption-desktop{
-        width: 80%;
-    }
-    #header-btn {
-        margin-top: 1.5rem;
-    }
-    body{
-        max-width: 70rem;
-    }
-    #menu{
-        display: none;
-    }
-    #desktop-ul{
-        display: flex;
-        flex-direction: row;
-        gap: 1.5rem;
-        list-style-type: none;
-        margin-right: 1.5rem;
- 
-    }
-    #desktop-ul > li{
-        color: #5E607A;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 26px;
-    }
-    footer{
-        display: flex;
-        margin-top: 0;
-        position: relative;
-        top: -5rem;
-        width: 90%;
-        margin: auto;
-    }
-    
-    
 }
